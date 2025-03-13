@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para Meu Amor 💜</title>
 <style>
-    /* Ajustes de estilo e responsividade */
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Arial', sans-serif;
         background-color: #f5e6ff;
         color: #5b2c6f;
         margin: 0;
@@ -17,80 +16,62 @@
         height: 100vh;
         overflow: hidden;
     }
-
-    /* Container principal ajustado para mobile */
     .container {
-        background-color: #d9b3ff;
-        width: 100%;
+        background: linear-gradient(135deg, #d9b3ff, #b080ff);
+        width: 90%;
         max-width: 400px;
-        height: 90vh;
+        height: auto;
         border-radius: 15px;
         padding: 20px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         text-align: center;
-        overflow: hidden;
-        position: relative;
         border: 2px solid #b080ff;
+        animation: fadeIn 2s ease-in-out;
     }
-
-    /* Título e frases */
     h1 {
         font-size: 1.8em;
         margin-bottom: 10px;
-        color: #b080ff;
-        animation: fadeIn 2s ease-in-out;
+        color: #fff;
     }
-
     .quote {
         font-size: 1.2em;
         margin: 10px 0;
-        color: #6e399c;
+        color: #fdfdfd;
         font-style: italic;
-        animation: fadeIn 3s ease-in-out;
     }
-
-    /* Imagem decorativa */
     .image-container {
         width: 100%;
-        height: 150px;
-        background-image: url('https://s39.aconvert.com/convert/p3r68-cdx67/9mer9-n4j34.jpg'); /* Imagem fornecida */
+        height: 200px;
+        background-image: url('img');
         background-size: cover;
         background-position: center;
         border-radius: 10px;
         margin: 15px 0;
-        animation: scaleIn 3s ease-in-out;
+        animation: scaleIn 2s ease-in-out;
     }
-
-    /* Animação de entrada */
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
     }
-
     @keyframes scaleIn {
         from { transform: scale(0.8); opacity: 0; }
         to { transform: scale(1); opacity: 1; }
     }
-
-    /* Botão de interação */
     .btn {
         margin-top: 15px;
         padding: 10px 15px;
         font-size: 1em;
         color: white;
-        background-color: #b080ff;
+        background: #9f6fd1;
         border: none;
         border-radius: 10px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.3s;
+        transition: 0.3s;
     }
-
     .btn:hover {
-        background-color: #9f6fd1;
+        background: #8757c7;
         transform: scale(1.1);
     }
-
-    /* Animações de corações flutuantes */
     .heart {
         position: absolute;
         font-size: 1.5em;
@@ -98,14 +79,10 @@
         animation: float 4s ease-in-out infinite;
         opacity: 0.7;
     }
-
-    /* Float para animação de corações */
     @keyframes float {
         0%, 100% { transform: translateY(0); }
         50% { transform: translateY(-20px); }
     }
-
-    /* Corações em posições aleatórias */
     .heart1 { top: 20%; left: 10%; }
     .heart2 { top: 70%; left: 25%; }
     .heart3 { top: 50%; right: 10%; }
@@ -117,16 +94,11 @@
 <div class="container">
     <h1>Para Você, Meu Amor 💜</h1>
     <p class="quote">"Só você consegue iluminar o meu dia como ninguém."</p>
-
-    <!-- Imagem decorativa -->
-<iframe src="https://drive.google.com/file/d/1bFZLRH7huDX69WITSiXOW_RpoaMbI-9c/preview" width="640" height="480" allow="autoplay"></iframe>
-    
+    <div class="image-container"></div>
     <p class="quote">"O seu sorriso é o que faz meu coração bater mais forte."</p>
-
     <button class="btn" onclick="alert('Te amo mais que tudo!')">Clique aqui 💖</button>
 </div>
 
-<!-- Corações flutuantes como decoração -->
 <div class="heart heart1">💖</div>
 <div class="heart heart2">💜</div>
 <div class="heart heart3">💞</div>
